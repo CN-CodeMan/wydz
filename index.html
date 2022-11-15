@@ -17,9 +17,10 @@
             <img src="https://testimg.applesign.com.cn/17EEB306DEF396071668255432000.png" alt="王亦店长">
             <h2>王亦店长</h2>
             <!-- <span>4+</span> -->
-            <p>IOS应用 下载用自带浏览器</p>
-            <p style="color: red; margin: 0 auto; padding: 0;">用自带浏览器打开否则无效</p>
-            <button><a href="itms-services://?action=download-manifest&url=https://www.wydz.store/index.plist" onclick="fn()">安装</a></button>
+            <p>IOS应用</p>
+            <p style="color: red; margin: 0 auto; padding: 0;">下载使用自带浏览器打开</p>
+            <button><a href="itms-services://?action=download-manifest&url=https://www.wydz.store/index.plist"
+                    onclick="fn()">安装</a></button>
 
         </div>
         <div class="center_2">
@@ -28,21 +29,28 @@
             <img src="https://testimg.applesign.com.cn/0A3D38C677168CBA1668193146000.jpg" alt="">
         </div>
         <div class="center_3">
-            <h2>更新内容</h2>
+            <h2>业务展示</h2>
             <p>支持朋友圈一键转发，及小程序功能集</p>
             <p>添加微信：wydzgzs88 豆瓣租房小组</p>
+            <p>--- 王亦店长工作室 ---</p>
+        </div>
+        <div class="center_title">
+            <h2>业务详情</h2>
+            <img src="https://testimg.applesign.com.cn/7C62339127B73A9A1668507697000.jpg" alt="">
             <p>王亦店长工作室</p>
         </div>
         <div class="center_4">
             <h2>应用介绍</h2>
-            <p>（免费应用不稳定，随时会掉，购买代发，赠送一年稳定版）</p>
+            <p>（免费应用不稳定，购买代发，赠送一年稳定版）</p>
             <p>[王亦店长]，专做豆瓣 上海租房 小组</p>
             <p>IOS版本，下载有次数,先到先得!</p>
             <p>安卓用户忽下，忽下，忽下安卓后期更新！</p>
             <p>版本未加密！</p>
             <p>--------------------------------------------</p>
             <p>不定时发放实用免费软件</p>
+            <p>www.wydz.top</p>
         </div>
+        <p class="bottom">Version 0.1 &copy;</p>
     </div>
 </body>
 <style>
@@ -61,6 +69,7 @@
     }
 
     .heder {
+
         height: 40px;
         width: 100%;
         border-bottom: 1px rgba(162, 163, 164, 0.41) solid;
@@ -141,7 +150,7 @@
     }
 
     .center_2 {
-        height: 450px;
+        min-height: 450px;
         min-width: 100%;
         /* background-color: rgb(158, 15, 163); */
         margin-top: 15px;
@@ -163,7 +172,7 @@
     }
 
     .center_3 {
-        height: 100px;
+        min-height: 100px;
         min-width: 100%;
         /* background-color: rgb(53, 189, 19); */
         margin-top: 15px;
@@ -183,12 +192,50 @@
     }
 
     .center_4 {
-        height: 220px;
+        min-height: 100px;
         min-width: 100%;
         /* background-color: rgb(53, 189, 19); */
         margin-top: 15px;
         border-bottom: 1px rgba(162, 163, 164, 0.41) solid;
         padding-bottom: 20px;
+    }
+
+    .center_title {
+        min-height: 100px;
+        /* min-width: 100%; */
+        /* background-color: rgb(53, 189, 19); */
+        margin-top: 15px;
+        border-bottom: 1px rgba(162, 163, 164, 0.41) solid;
+        padding-bottom: 20px;
+    }
+
+    .center_title P {
+        font-size: 22px;
+        list-style: none;
+        margin: 0 auto;
+        /* padding: 0; */
+        padding-top: 10px;
+        text-align: center;
+        font-weight: 800;
+        color: rgb(210, 30, 30);
+    }
+
+    .center_title img {
+        width: 580px;
+        height: 1000px;
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+
+    }
+
+    .bottom {
+        width: 150px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        text-align: center;
+        margin: 0 auto;
     }
 </style>
 <script>
@@ -207,7 +254,12 @@
     //     fn1()
     // }
     function fn() {
-        console.log('进入了');
+        // console.log('进入了');
+        setTimeout(function () {
+            // console.log(222);
+            alert('下载缓慢耐心等下,下载完毕看桌面提示')
+
+        }, 5000)
     }
 
 </script>
